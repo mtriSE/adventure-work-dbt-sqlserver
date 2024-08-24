@@ -32,9 +32,9 @@ This command will install the `dbt-core` and the adapter of dbt for PostgreSQL `
 ```shell
 dbt init
 ```
-![project name: dbt_tutorial](image.png)
+![project name: dbt_tutorial](figures/dbt-init.png)
 
 2. After this process, the `profile.yml` file in `.dbt` folder is created in the home directory, The process of creating a new dbt project creates a template that can be filled with connection properties to connect to the database. Also, it has connections for various environments: 
-![profile.yml template](image-1.png)
+![profile.yml template](figures/profile-yml.png)
 Then fill the template: 
-![filled template](image-2.png)
+![filled template](figures/filled-profile.png)
