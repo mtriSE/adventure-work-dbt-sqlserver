@@ -38,6 +38,31 @@ dbt init
 
 ![profile.yml template](figures/profile-yml.png)
 
-Then fill the template: 
+Then fill the parameters to connect to the Adventure Works db that was initiated earlier: 
 
 ![filled template](figures/filled-profile.png)
+
+I choose the schema `warehouse` because all the artifacts created by running this project (in the **dev** environment) will be created in the `warehouse` schema in the database.
+
+# First Model - Sales Order
+The previous step also create the folder structure inside the directory with the name given to the project `dbt_tutorial`. Additionally, the `dbt_project.yml` file gets created which defines the project.
+
+To create the model, the default path (defined inside the `dbt_project.yml` at the field `model-paths`) is `dbt_tutorial/models`. So in `models` folder, let create a folder call `warehouse` and inside it, create a file named `source_adventureworks.yml`. This will define the source, and the tables which will be referred to in this project:
+
+![source_adventureworks.yml](figures/source_adventureworks.png)
+
+I have use the command `\dt sales.*` & `\dt production.*` to view all tables in schema `sales` & `production`
+![tables in schema: sales](figures/show-table-sales.png) 
+
+![tables in schema: production](figures/show-table-production.png)
+
+Next, let define the model `warehouse.sales_order_header`: create a new file inside `warehouse` with name `sales_order_header.sql` and define columns that will be inclued in the model:
+![model warehouse.sales_order_header](figures/sales_order_header.sql.png)
+
+I have use command `\d+ sales.salesorderheader` to view all column of that table:
+![all column in sales.salesorderheader](figures/describe-salesorderheader.png)
+
+Here, some columns are being selected from the `sales.salesorderheader` table, and one column, `rowguid` is being renamed as `row_id`. The Jinja syntax `source('sales', 'salesorderheader')` refers to the source previously defined. The documentation states that it ***creates dependencies between a source and the current model, which is useful for documentation and model selection***. And takes the following arguments: 
+
+- `<source_name>`: The `name:` defined under a `sources:` key
+- `<table_name>`: The `name:` defined under a `tables:` key
