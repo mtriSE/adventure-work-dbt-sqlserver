@@ -35,6 +35,9 @@ dbt init
 ![project name: dbt_tutorial](figures/dbt-init.png)
 
 2. After this process, the `profile.yml` file in `.dbt` folder is created in the home directory, The process of creating a new dbt project creates a template that can be filled with connection properties to connect to the database. Also, it has connections for various environments: 
+
 ![profile.yml template](figures/profile-yml.png)
+
 Then fill the template: 
+
 ![filled template](figures/filled-profile.png)
