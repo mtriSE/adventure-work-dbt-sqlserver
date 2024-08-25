@@ -1,4 +1,5 @@
 
-target/
-dbt_packages/
-logs/
+## By default, these folder will be ignored 
+# target/
+# dbt_packages/
+# logs/
