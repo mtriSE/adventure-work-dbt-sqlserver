@@ -123,4 +123,23 @@ One of major capabilities that dbt provides is to **define tests and validations
 
 There is a large number of built-in tests, and more can be added by using external packages, or writing custom test!. This require user to **create a model yml file for configurating model**. Inside the `models/warehouse` folder, add a new file named `sales_order_header.yml` and define each column for the `sales_order_header` model:
 
+![model config](figures/define-test-for-model.png)
 
+Here we added definitions for all the columns of the model, and have also add descriptions for some columns. *This will add documentation to the model of the column and will server as a nice reference*. This can done by **adding the** `persist_docs` configuration to `dbt_project.yml`:
+
+***Note***: _The_ `persist_docs` _can be configured at different levels including **project-level**, **model-level** and **individual columns-level**_
+
+![apply `presist_docs` on project-level](figures/persist_docs-proj-lv.png)
+
+![alt text](figures/document-persisted.png)
+
+After writing test configuration, let test by command: 
+```shell
+dbt test
+```
+
+![result after run dbt test](figures/result-dbt-test.png)
+
+The logs mention the generated SQL file for the test, which is present together with other tests at the path `target/compiled/dbt_tutorial/models/warehouse/sales_order_header.yml`
+
+![path of logs after dbt test](figures/log-test.png)

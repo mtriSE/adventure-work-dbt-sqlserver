@@ -35,5 +35,12 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    # Config indicated by + and applies to all files under models/warehouse/
     warehouse:
       +materialized: table
+
+    # applied in project-level
+    +persist_docs:
+      relation: true
+      column: true
+    
