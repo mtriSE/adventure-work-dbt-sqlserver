@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: sales_order_header
+    description: "Sales Order Header table"
+    columns:
+      - name: salesorderid
+        description: "sales order id"
+
+      - name: revisionnumber
+        description: "revision number"
+
+
+      - name: orderdate
+        description: "order date"
+
+      - name: duedate
+        description: ""
+
+      - name: shipdate
+        description: ""
+
+      - name: status
+        description: ""
+        tests:
+          - accepted_values:
+            values: [1,2,3,4]
+
+      - name: onlineorderflag
+        description: ""
+
+      - name: purchaseordernumber
+        description: ""
+
+      - name: subtotal
+        description: ""
+      
+      - name: taxamt
+        description: ""
+      
+      - name: freight
+        description: ""
+      
+      - name: totaldue
+        description: ""
+      
+      - name: row_id
+        description: "Row Identifier"
+        tests:
+          - not_null
+          - unique
+      
+      - name: modifieddate
+        description: ""

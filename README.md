@@ -1,18 +1,19 @@
 # Setting up PostgreSQL database instance with AdventureWorks 2014
----
 1. From the root directory, change directory to `AdventureWorks-for-Postgres`:
 ```shell
 cd ./AdventureWorks-for-Postgres
 ```
 2. Create a .env file with the sample as below:
 ```plain_text
-POSTGRES_USER=<your_user>
-POSTGRES_PASSWORD=<your_password>
+POSTGRES_USER="<your_user>"
+POSTGRES_PASSWORD="<your_password>"
 ```
 3. Build and run the instance:
 ```shell
 docker compose up -d
 ```
+
+---
 
 # Setting up environment for programming
 1. Change directory to the root
@@ -26,6 +27,8 @@ pip install -r ./requirements.txt
 ```
 
 This command will install the `dbt-core` and the adapter of dbt for PostgreSQL `dbt-postgres`
+
+---
 
 # Setting up dbt project
 1. Initialize dbt project with command:
@@ -43,6 +46,8 @@ Then fill the parameters to connect to the Adventure Works db that was initiated
 ![filled template](figures/filled-profile.png)
 
 I choose the schema `warehouse` because all the artifacts created by running this project (in the **dev** environment) will be created in the `warehouse` schema in the database.
+
+---
 
 # First Model - Sales Order
 The previous step also create the folder structure inside the directory with the name given to the project `dbt_tutorial`. Additionally, the `dbt_project.yml` file gets created which defines the project.
@@ -110,3 +115,12 @@ meaning that: all models in `example` folder will be materialized as views and t
 Command `dbt run` first compile the project to generate SQL that is will execute on the target database. The generated files are present inside the target folder (`dbt_tutorial/target`), let view the SQL for creating and populating the `sales_order_header` table:
 
 ![generate sql for sales_order_header](figures/gen_sql_warehouse.png) 
+
+---
+
+# Defining tests
+One of major capabilities that dbt provides is to **define tests and validations on columns and models**
+
+There is a large number of built-in tests, and more can be added by using external packages, or writing custom test!. This require user to **create a model yml file for configurating model**. Inside the `models/warehouse` folder, add a new file named `sales_order_header.yml` and define each column for the `sales_order_header` model:
+
+
