@@ -143,3 +143,9 @@ dbt test
 The logs mention the generated SQL file for the test, which is present together with other tests at the path `target/compiled/dbt_tutorial/models/warehouse/sales_order_header.yml`
 
 ![path of logs after dbt test](figures/log-test.png)
+
+Now, I will open files at path `target/compiled/dbt_tutorial/models/warehouse/sales_order_header.yml/*`. These file will be directly run on the table, and all the __tests fail if they return a row__. The test has been failed here is accepted_values_sales_order_header_status__1__2__3__4. So you will need to rerun the file `accepted_values_sales_order_header_status__1__2__3__4.sql` to view and gain information about why test fails. Here, I will just select and count any record that has `status` column with value not in (1,2,3,4): 
+
+![result after rerun](figures/mannually-rerun-test-value-not-in-1_4.png)
+
+There are more 31,000 row with value of `status` columns not in (1,2,3,4) -> the test throw fail!
