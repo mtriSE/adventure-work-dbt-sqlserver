@@ -16,6 +16,9 @@ models:
 
       - name: duedate
         description: ""
+        tests:
+          - greater_than_column:
+              greater_than_column_name: orderdate
 
       - name: shipdate
         description: ""

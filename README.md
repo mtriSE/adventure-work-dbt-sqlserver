@@ -149,3 +149,63 @@ Now, I will open files at path `target/compiled/dbt_tutorial/models/warehouse/sa
 ![result after rerun](figures/mannually-rerun-test-value-not-in-1_4.png)
 
 There are more 31,000 row with value of `status` columns not in (1,2,3,4) -> the test throw fail!
+
+# Advanced Testing - Adding custom tests
+To create a custom test, the simplest way is to write a test in SQL that checks a condition. In dbt, this can be enhanced by referring to the model involved using __Jinja__ to refer to a source or model. This is called a singular test. It needs to be added to the `tests` folder in the `dbt_tutorial` folder.
+
+Lets add a test to it, create a `.sql` with the name `test_due_date_before_order_date.sql`:
+
+```SQL
+SELECT duedate, orderdate, count(1) as occurrences
+FROM {{ ref('sales_order_header') }}
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate;
+```
+
+![specified custom test](figures/specified-custom-test-path.png)
+
+The above test, written specifically for the `orderdate` and `duedate` columns. It should be a _generic test_ that takes a column to check as parameter. This is called __generic tests__, and they should reside inside `tests/generic` folder. This generic test uses Jinja syntax to define the test as a function, and that function can later be re-used.
+
+![create a generic test in tests/generic](figures/create-generic-test.png)
+
+```SQL
+{% test greater_than_column(model, column_name, greater_than_column_name) %}
+
+SELECT {{ column_name }}, {{ greater_than_column_name }}, count(1) as num_occurrences
+FROM {{ model }}
+WHERE {{ column_name }} < {{ greater_than_column_name }}
+GROUP BY 1,2
+
+{% endtest %}
+```
+
+The first line defines the test with name `greater_than_column`, which is the function with parameters
+
+This test can be used in the model `.yml` files, either at _model level_ or _column level_. When used at a column level, the values of first parameters: `model` and `column_name` are passed by dbt, and only the value of the last parameter `greater_than_column_name` needs to be passed to the test. For example, you can use this test in `sales_order_header.yml` as below:
+
+```YAML
+version:2 
+
+models:
+    - name: sales_order_header
+      description: "sales order id"
+    ...
+    - name: orderdate
+      description: ""
+    - name: duedate
+      description: ""
+      tests:
+        - greater_than_column:
+            greater_than_column_name: orderdate
+    ...
+```
+
+Run test:
+```shell
+dbt test
+```
+And the result: 
+![result after run test](figures/result-generic-test.png)
+
+Below is the compiled form for the test in path `target/compiled/dbt_tutorial/tests/test_due_date_before_order_date.sql`
+![generated generic test](figures/test_due_date_before_order_date.sql.png)

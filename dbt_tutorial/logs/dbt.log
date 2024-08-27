@@ -2538,3 +2538,2133 @@ having count(*) > 1
 [0m11:29:12.630113 [debug] [MainThread]: Command `dbt test` failed at 11:29:12.629585 after 0.80 seconds
 [0m11:29:12.630638 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C20D83640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C2374D8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026C2374D450>]}
 [0m11:29:12.631163 [debug] [MainThread]: Flushing usage events
+[0m09:57:54.047119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD30C77640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD330C7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD330C7130>]}
+
+
+============================== 09:57:54.059684 | 43c7502f-539d-4d21-9be1-3ec5706600dc ==============================
+[0m09:57:54.059684 [info ] [MainThread]: Running with dbt=1.5.11
+[0m09:57:54.060683 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'D:\\CS\\dbt\\dbt_tutorial\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\mtri0\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m09:57:54.252261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '43c7502f-539d-4d21-9be1-3ec5706600dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD330C73D0>]}
+[0m09:57:54.271719 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '43c7502f-539d-4d21-9be1-3ec5706600dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD3341CAC0>]}
+[0m09:57:54.277217 [info ] [MainThread]: Registered adapter: postgres=1.5.11
+[0m09:57:54.296124 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m09:57:54.991203 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m09:57:54.991203 [debug] [MainThread]: Partial parsing: added file: dbt_tutorial://tests\generic\test_greater_than_column.sql
+[0m09:57:54.992204 [debug] [MainThread]: Partial parsing: added file: dbt_tutorial://tests\test_due_date_before_order_date.sql
+[0m09:57:54.993204 [debug] [MainThread]: Partial parsing: updated file: dbt_tutorial://models\warehouse\sales_order_header.yml
+[0m09:57:54.993204 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Reached EOF without finding a close tag for test (searched from line 1)
+[0m09:57:54.994206 [debug] [MainThread]: Command `dbt test` failed at 09:57:54.994206 after 0.98 seconds
+[0m09:57:54.995206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD30C77640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD334F03A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DD334F0370>]}
+[0m09:57:54.995206 [debug] [MainThread]: Flushing usage events
+[0m09:58:41.659390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F59FC77640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A20C7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A20C7130>]}
+
+
+============================== 09:58:41.662963 | 53385ac5-57e1-4c53-a39d-93543e188b83 ==============================
+[0m09:58:41.662963 [info ] [MainThread]: Running with dbt=1.5.11
+[0m09:58:41.663962 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\mtri0\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'D:\\CS\\dbt\\dbt_tutorial\\logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m09:58:41.730501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A20C73D0>]}
+[0m09:58:41.749502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A241CAC0>]}
+[0m09:58:41.750501 [info ] [MainThread]: Registered adapter: postgres=1.5.11
+[0m09:58:41.763277 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m09:58:41.819646 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m09:58:41.820637 [debug] [MainThread]: Partial parsing: added file: dbt_tutorial://tests\generic\test_greater_than_column.sql
+[0m09:58:41.820637 [debug] [MainThread]: Partial parsing: added file: dbt_tutorial://tests\test_due_date_before_order_date.sql
+[0m09:58:41.821637 [debug] [MainThread]: Partial parsing: updated file: dbt_tutorial://models\warehouse\sales_order_header.yml
+[0m09:58:41.862638 [debug] [MainThread]: 1699: static parser successfully parsed warehouse\sales_order_header.sql
+[0m09:58:41.960704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A26640D0>]}
+[0m09:58:41.969705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A25766E0>]}
+[0m09:58:41.970705 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[0m09:58:41.971707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A2576A40>]}
+[0m09:58:41.974138 [info ] [MainThread]: 
+[0m09:58:41.974138 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m09:58:41.976137 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Adventureworks_warehouse'
+[0m09:58:41.988178 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m09:58:41.988178 [debug] [ThreadPool]: On list_Adventureworks_warehouse: BEGIN
+[0m09:58:41.989174 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:58:42.159259 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:42.160258 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m09:58:42.160258 [debug] [ThreadPool]: On list_Adventureworks_warehouse: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "list_Adventureworks_warehouse"} */
+select
+      'Adventureworks' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'Adventureworks' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m09:58:42.256906 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m09:58:42.258904 [debug] [ThreadPool]: On list_Adventureworks_warehouse: ROLLBACK
+[0m09:58:42.261914 [debug] [ThreadPool]: On list_Adventureworks_warehouse: Close
+[0m09:58:42.267911 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:42.268906 [debug] [MainThread]: On master: BEGIN
+[0m09:58:42.268906 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:58:42.290810 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:42.291810 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:42.291810 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m09:58:42.966467 [debug] [MainThread]: SQL status: SELECT 147 in 1.0 seconds
+[0m09:58:42.974501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '53385ac5-57e1-4c53-a39d-93543e188b83', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A25A7460>]}
+[0m09:58:42.976464 [debug] [MainThread]: On master: ROLLBACK
+[0m09:58:42.980466 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:42.981461 [debug] [MainThread]: On master: BEGIN
+[0m09:58:42.984481 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:42.986472 [debug] [MainThread]: On master: COMMIT
+[0m09:58:42.987474 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:42.988468 [debug] [MainThread]: On master: COMMIT
+[0m09:58:42.992463 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m09:58:42.993481 [debug] [MainThread]: On master: Close
+[0m09:58:42.995462 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:58:42.998468 [info ] [MainThread]: 
+[0m09:58:43.019832 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m09:58:43.021836 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m09:58:43.022829 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m09:58:43.022829 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m09:58:43.023830 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_sales_order_header_status__1__2__3__4 ........ [RUN]
+[0m09:58:43.024835 [info ] [Thread-2 (]: 2 of 9 START test greater_than_column_sales_order_header_duedate__orderdate .... [RUN]
+[0m09:58:43.025834 [info ] [Thread-3 (]: 3 of 9 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m09:58:43.026834 [info ] [Thread-4 (]: 4 of 9 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m09:58:43.029830 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405'
+[0m09:58:43.031830 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f'
+[0m09:58:43.031830 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m09:58:43.033850 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778'
+[0m09:58:43.033850 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m09:58:43.035908 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m09:58:43.036919 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m09:58:43.038823 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m09:58:43.053174 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m09:58:43.070067 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m09:58:43.086168 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m09:58:43.095160 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m09:58:43.098596 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 09:58:43.071109 => 09:58:43.097968
+[0m09:58:43.099594 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (compile): 09:58:43.038823 => 09:58:43.098596
+[0m09:58:43.100595 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (compile): 09:58:43.087193 => 09:58:43.099594
+[0m09:58:43.102048 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m09:58:43.103817 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (compile): 09:58:43.054208 => 09:58:43.103044
+[0m09:58:43.105759 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m09:58:43.107775 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m09:58:43.130879 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m09:58:43.131877 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m09:58:43.135979 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m09:58:43.141969 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m09:58:43.142959 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m09:58:43.144965 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m09:58:43.145936 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m09:58:43.145936 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m09:58:43.146936 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m09:58:43.147936 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m09:58:43.148937 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m09:58:43.148937 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: BEGIN
+[0m09:58:43.150001 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m09:58:43.150534 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: BEGIN
+[0m09:58:43.150534 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m09:58:43.151514 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m09:58:43.151514 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m09:58:43.182242 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.183242 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m09:58:43.183242 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.188241 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.188241 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.188241 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m09:58:43.189241 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m09:58:43.189241 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.190241 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "Adventureworks"."warehouse"."sales_order_header"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.196241 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.197241 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m09:58:43.197241 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+SELECT duedate, orderdate, count(1) as num_occurrences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < 
+GROUP BY 1,2
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.199241 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.199241 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.202241 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 09:58:43.108745 => 09:58:43.202241
+[0m09:58:43.202241 [debug] [Thread-2 (]: Postgres adapter: Postgres error: syntax error at or near "GROUP"
+LINE 12: GROUP BY 1,2
+         ^
+
+[0m09:58:43.204242 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (execute): 09:58:43.138943 => 09:58:43.203243
+[0m09:58:43.204242 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m09:58:43.205242 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: ROLLBACK
+[0m09:58:43.205242 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m09:58:43.207243 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (execute): 09:58:43.142959 => 09:58:43.206240
+[0m09:58:43.207243 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m09:58:43.207243 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m09:58:43.208241 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: Close
+[0m09:58:43.209244 [info ] [Thread-4 (]: 4 of 9 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.18s]
+[0m09:58:43.210241 [error] [Thread-3 (]: 3 of 9 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.18s]
+[0m09:58:43.213242 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m09:58:43.214165 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m09:58:43.215778 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m09:58:43.216842 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.test_due_date_before_order_date
+[0m09:58:43.217365 [info ] [Thread-4 (]: 5 of 9 START test not_null_sales_order_header_row_id ........................... [RUN]
+[0m09:58:43.218412 [info ] [Thread-3 (]: 6 of 9 START test test_due_date_before_order_date .............................. [RUN]
+[0m09:58:43.218935 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438)
+[0m09:58:43.219979 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_tutorial.test_due_date_before_order_date)
+[0m09:58:43.220502 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m09:58:43.221027 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.test_due_date_before_order_date
+[0m09:58:43.227459 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.229388 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m09:58:43.232711 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m09:58:43.235317 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (execute): 09:58:43.131877 => 09:58:43.234805
+[0m09:58:43.236356 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (compile): 09:58:43.221027 => 09:58:43.236356
+[0m09:58:43.236873 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: ROLLBACK
+[0m09:58:43.237395 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (compile): 09:58:43.230384 => 09:58:43.237395
+[0m09:58:43.237912 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m09:58:43.238434 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.test_due_date_before_order_date
+[0m09:58:43.241029 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m09:58:43.241549 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: Close
+[0m09:58:43.243583 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m09:58:43.246583 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m09:58:43.245584 [error] [Thread-1 (]: 1 of 9 FAIL 1 accepted_values_sales_order_header_status__1__2__3__4 ............ [[31mFAIL 1[0m in 0.22s]
+[0m09:58:43.247582 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: BEGIN
+[0m09:58:43.247582 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m09:58:43.248582 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m09:58:43.249582 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:58:43.249582 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: BEGIN
+[0m09:58:43.250581 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m09:58:43.250581 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:58:43.251585 [info ] [Thread-1 (]: 7 of 9 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m09:58:43.253581 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405, now test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321)
+[0m09:58:43.253581 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m09:58:43.264739 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m09:58:43.266884 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (compile): 09:58:43.254580 => 09:58:43.266884
+[0m09:58:43.267928 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m09:58:43.271145 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m09:58:43.272727 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m09:58:43.273787 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m09:58:43.274837 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:58:43.275878 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.276411 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m09:58:43.277675 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.test_due_date_before_order_date"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT duedate, orderdate, count(1) as occurences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate
+      
+    ) dbt_internal_test
+[0m09:58:43.281867 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.282868 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m09:58:43.285884 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select row_id
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.303865 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.310867 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (execute): 09:58:43.238951 => 09:58:43.309871
+[0m09:58:43.312870 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: ROLLBACK
+[0m09:58:43.317957 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: Close
+[0m09:58:43.321947 [info ] [Thread-4 (]: 5 of 9 PASS not_null_sales_order_header_row_id ................................. [[32mPASS[0m in 0.10s]
+[0m09:58:43.323947 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m09:58:43.324949 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.325948 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m09:58:43.329516 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (execute): 09:58:43.241549 => 09:58:43.328993
+[0m09:58:43.330059 [info ] [Thread-4 (]: 8 of 9 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m09:58:43.331121 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: ROLLBACK
+[0m09:58:43.331660 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438, now test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493)
+[0m09:58:43.332727 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m09:58:43.338030 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m09:58:43.338550 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: Close
+[0m09:58:43.341065 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.340064 [info ] [Thread-3 (]: 6 of 9 PASS test_due_date_before_order_date .................................... [[32mPASS[0m in 0.12s]
+[0m09:58:43.344069 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (compile): 09:58:43.333261 => 09:58:43.342063
+[0m09:58:43.344069 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m09:58:43.346060 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.test_due_date_before_order_date
+[0m09:58:43.347064 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m09:58:43.348065 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.351076 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m09:58:43.358061 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m09:58:43.360063 [info ] [Thread-3 (]: 9 of 9 START test unique_sales_order_header_row_id ............................. [RUN]
+[0m09:58:43.363064 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.test_due_date_before_order_date, now test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e)
+[0m09:58:43.364063 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m09:58:43.365063 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m09:58:43.366067 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.379190 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m09:58:43.382185 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m09:58:43.389676 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (execute): 09:58:43.268449 => 09:58:43.389676
+[0m09:58:43.391912 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m09:58:43.396322 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m09:58:43.400167 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (compile): 09:58:43.367061 => 09:58:43.398331
+[0m09:58:43.402053 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m09:58:43.404616 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: Close
+[0m09:58:43.416087 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m09:58:43.423283 [info ] [Thread-1 (]: 7 of 9 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.17s]
+[0m09:58:43.428073 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m09:58:43.430047 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m09:58:43.434568 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: BEGIN
+[0m09:58:43.437478 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m09:58:43.443014 [debug] [Thread-2 (]: Database Error in test greater_than_column_sales_order_header_duedate__orderdate (models\warehouse\sales_order_header.yml)
+  syntax error at or near "GROUP"
+  LINE 12: GROUP BY 1,2
+           ^
+  compiled Code at target\run\dbt_tutorial\models\warehouse\sales_order_header.yml\greater_than_column_sales_order_header_duedate__orderdate.sql
+[0m09:58:43.452658 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.450662 [error] [Thread-2 (]: 2 of 9 ERROR greater_than_column_sales_order_header_duedate__orderdate ......... [[31mERROR[0m in 0.42s]
+[0m09:58:43.453667 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m09:58:43.454665 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m09:58:43.455679 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.458658 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.460655 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (execute): 09:58:43.352068 => 09:58:43.459657
+[0m09:58:43.460655 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m09:58:43.461655 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m09:58:43.464664 [info ] [Thread-4 (]: 8 of 9 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.13s]
+[0m09:58:43.470662 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m09:58:43.475657 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.475657 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m09:58:43.476656 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    row_id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is not null
+group by row_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m09:58:43.567998 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m09:58:43.569999 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (execute): 09:58:43.405600 => 09:58:43.569999
+[0m09:58:43.569999 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: ROLLBACK
+[0m09:58:43.570998 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: Close
+[0m09:58:43.571999 [info ] [Thread-3 (]: 9 of 9 PASS unique_sales_order_header_row_id ................................... [[32mPASS[0m in 0.21s]
+[0m09:58:43.573001 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m09:58:43.574999 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:43.576825 [debug] [MainThread]: On master: BEGIN
+[0m09:58:43.577340 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m09:58:43.592586 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m09:58:43.593587 [debug] [MainThread]: On master: COMMIT
+[0m09:58:43.593587 [debug] [MainThread]: Using postgres connection "master"
+[0m09:58:43.593587 [debug] [MainThread]: On master: COMMIT
+[0m09:58:43.594586 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m09:58:43.595586 [debug] [MainThread]: On master: Close
+[0m09:58:43.596587 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:58:43.596587 [debug] [MainThread]: Connection 'list_Adventureworks_warehouse' was properly closed.
+[0m09:58:43.597588 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m09:58:43.597588 [debug] [MainThread]: Connection 'test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f' was properly closed.
+[0m09:58:43.597588 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e' was properly closed.
+[0m09:58:43.598586 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m09:58:43.599468 [info ] [MainThread]: 
+[0m09:58:43.599985 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 1.62 seconds (1.62s).
+[0m09:58:43.602069 [debug] [MainThread]: Command end result
+[0m09:58:43.612478 [info ] [MainThread]: 
+[0m09:58:43.613481 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m09:58:43.614480 [info ] [MainThread]: 
+[0m09:58:43.614480 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m09:58:43.615486 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m09:58:43.617382 [info ] [MainThread]: 
+[0m09:58:43.621386 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m09:58:43.624384 [info ] [MainThread]: 
+[0m09:58:43.625378 [error] [MainThread]: [31mFailure in test accepted_values_sales_order_header_status__1__2__3__4 (models\warehouse\sales_order_header.yml)[0m
+[0m09:58:43.626407 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m09:58:43.627383 [info ] [MainThread]: 
+[0m09:58:43.628384 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\warehouse\sales_order_header.yml\accepted_values_sales_order_header_status__1__2__3__4.sql
+[0m09:58:43.629375 [info ] [MainThread]: 
+[0m09:58:43.629375 [error] [MainThread]: [33mDatabase Error in test greater_than_column_sales_order_header_duedate__orderdate (models\warehouse\sales_order_header.yml)[0m
+[0m09:58:43.630376 [error] [MainThread]:   syntax error at or near "GROUP"
+[0m09:58:43.630376 [error] [MainThread]:   LINE 12: GROUP BY 1,2
+[0m09:58:43.631375 [error] [MainThread]:            ^
+[0m09:58:43.631375 [error] [MainThread]:   compiled Code at target\run\dbt_tutorial\models\warehouse\sales_order_header.yml\greater_than_column_sales_order_header_duedate__orderdate.sql
+[0m09:58:43.632377 [info ] [MainThread]: 
+[0m09:58:43.632377 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=3 SKIP=0 TOTAL=9
+[0m09:58:43.633377 [debug] [MainThread]: Command `dbt test` failed at 09:58:43.633377 after 1.99 seconds
+[0m09:58:43.633377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F59FC77640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A20C7070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5A273A350>]}
+[0m09:58:43.634377 [debug] [MainThread]: Flushing usage events
+[0m10:00:28.589996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11D677640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11FAD3280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11FAD3130>]}
+
+
+============================== 10:00:28.592994 | 6b4ae762-98d4-490b-b627-8254735e0e5e ==============================
+[0m10:00:28.592994 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:00:28.593995 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\mtri0\\.dbt', 'log_path': 'D:\\CS\\dbt\\dbt_tutorial\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:00:28.665511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11FAD33D0>]}
+[0m10:00:28.685754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11FC3CAC0>]}
+[0m10:00:28.687757 [info ] [MainThread]: Registered adapter: postgres=1.5.11
+[0m10:00:28.699720 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m10:00:28.763129 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:00:28.764130 [debug] [MainThread]: Partial parsing: updated file: dbt_tutorial://tests\generic\test_greater_than_column.sql
+[0m10:00:28.788421 [debug] [MainThread]: 1699: static parser successfully parsed warehouse\sales_order_header.sql
+[0m10:00:28.869256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1201180D0>]}
+[0m10:00:28.878256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A12004FFA0>]}
+[0m10:00:28.879256 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:00:28.880256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A120095960>]}
+[0m10:00:28.881361 [info ] [MainThread]: 
+[0m10:00:28.882363 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:00:28.884448 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Adventureworks_warehouse'
+[0m10:00:28.895448 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:00:28.895448 [debug] [ThreadPool]: On list_Adventureworks_warehouse: BEGIN
+[0m10:00:28.895448 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:00:28.918747 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:28.918747 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:00:28.919748 [debug] [ThreadPool]: On list_Adventureworks_warehouse: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "list_Adventureworks_warehouse"} */
+select
+      'Adventureworks' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'Adventureworks' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m10:00:28.922748 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m10:00:28.923747 [debug] [ThreadPool]: On list_Adventureworks_warehouse: ROLLBACK
+[0m10:00:28.924747 [debug] [ThreadPool]: On list_Adventureworks_warehouse: Close
+[0m10:00:28.930396 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:28.931052 [debug] [MainThread]: On master: BEGIN
+[0m10:00:28.931052 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:00:28.948785 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:28.949313 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:28.949853 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m10:00:29.254766 [debug] [MainThread]: SQL status: SELECT 147 in 0.0 seconds
+[0m10:00:29.258845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6b4ae762-98d4-490b-b627-8254735e0e5e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A12004FFD0>]}
+[0m10:00:29.259955 [debug] [MainThread]: On master: ROLLBACK
+[0m10:00:29.261468 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:29.261468 [debug] [MainThread]: On master: BEGIN
+[0m10:00:29.264467 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.264467 [debug] [MainThread]: On master: COMMIT
+[0m10:00:29.265466 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:29.265466 [debug] [MainThread]: On master: COMMIT
+[0m10:00:29.266507 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:00:29.267467 [debug] [MainThread]: On master: Close
+[0m10:00:29.268467 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:00:29.268467 [info ] [MainThread]: 
+[0m10:00:29.273605 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:00:29.274129 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:00:29.274652 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:00:29.275209 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:00:29.275209 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_sales_order_header_status__1__2__3__4 ........ [RUN]
+[0m10:00:29.276256 [info ] [Thread-2 (]: 2 of 9 START test greater_than_column_sales_order_header_duedate__orderdate .... [RUN]
+[0m10:00:29.276780 [info ] [Thread-3 (]: 3 of 9 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m10:00:29.277308 [info ] [Thread-4 (]: 4 of 9 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m10:00:29.278351 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405'
+[0m10:00:29.278872 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f'
+[0m10:00:29.279909 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m10:00:29.280429 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778'
+[0m10:00:29.281063 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:00:29.281585 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:00:29.282097 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:00:29.282097 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:00:29.290188 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:00:29.294184 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:00:29.303244 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:00:29.307506 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:00:29.308555 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (compile): 10:00:29.282097 => 10:00:29.308555
+[0m10:00:29.308555 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (compile): 10:00:29.291186 => 10:00:29.308555
+[0m10:00:29.308555 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:00:29.308555 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 10:00:29.295184 => 10:00:29.308555
+[0m10:00:29.308555 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (compile): 10:00:29.304196 => 10:00:29.308555
+[0m10:00:29.308555 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:00:29.321092 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:00:29.321092 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:00:29.326306 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:00:29.329342 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:00:29.332423 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:00:29.332423 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:00:29.334683 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:00:29.335650 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:00:29.336651 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: BEGIN
+[0m10:00:29.336651 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:00:29.337668 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:00:29.338653 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: BEGIN
+[0m10:00:29.338653 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:00:29.339623 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m10:00:29.340140 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m10:00:29.340140 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:00:29.341185 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:00:29.342146 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:00:29.358810 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.360322 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.360322 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:00:29.360322 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:00:29.360322 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.360322 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.360322 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.364334 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.365856 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (execute): 10:00:29.333535 => 10:00:29.365856
+[0m10:00:29.365856 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.365856 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 10:00:29.330329 => 10:00:29.365856
+[0m10:00:29.365856 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.365856 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m10:00:29.365856 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:00:29.365856 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m10:00:29.365856 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:00:29.365856 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+SELECT duedate, orderdate, count(1) as num_occurrences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < 
+GROUP BY duedate, orderdate
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.365856 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m10:00:29.365856 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "Adventureworks"."warehouse"."sales_order_header"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.365856 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m10:00:29.365856 [debug] [Thread-2 (]: Postgres adapter: Postgres error: syntax error at or near "GROUP"
+LINE 12: GROUP BY duedate, orderdate
+         ^
+
+[0m10:00:29.365856 [info ] [Thread-4 (]: 4 of 9 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.09s]
+[0m10:00:29.376878 [error] [Thread-3 (]: 3 of 9 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.10s]
+[0m10:00:29.377933 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: ROLLBACK
+[0m10:00:29.378975 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:00:29.379499 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:00:29.380538 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:00:29.381061 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (execute): 10:00:29.326306 => 10:00:29.380538
+[0m10:00:29.381664 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:00:29.382183 [info ] [Thread-4 (]: 5 of 9 START test not_null_sales_order_header_row_id ........................... [RUN]
+[0m10:00:29.382767 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: Close
+[0m10:00:29.383289 [info ] [Thread-3 (]: 6 of 9 START test test_due_date_before_order_date .............................. [RUN]
+[0m10:00:29.384327 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438)
+[0m10:00:29.385360 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.386392 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_tutorial.test_due_date_before_order_date)
+[0m10:00:29.386945 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:00:29.389026 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (execute): 10:00:29.308555 => 10:00:29.388508
+[0m10:00:29.389547 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:00:29.393574 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:00:29.394575 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: ROLLBACK
+[0m10:00:29.397643 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:00:29.399198 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (compile): 10:00:29.390067 => 10:00:29.398680
+[0m10:00:29.399728 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: Close
+[0m10:00:29.400767 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:00:29.401290 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (compile): 10:00:29.394575 => 10:00:29.400767
+[0m10:00:29.402865 [error] [Thread-1 (]: 1 of 9 FAIL 1 accepted_values_sales_order_header_status__1__2__3__4 ............ [[31mFAIL 1[0m in 0.12s]
+[0m10:00:29.403388 [debug] [Thread-2 (]: Database Error in test greater_than_column_sales_order_header_duedate__orderdate (models\warehouse\sales_order_header.yml)
+  syntax error at or near "GROUP"
+  LINE 12: GROUP BY duedate, orderdate
+           ^
+  compiled Code at target\run\dbt_tutorial\models\warehouse\sales_order_header.yml\greater_than_column_sales_order_header_duedate__orderdate.sql
+[0m10:00:29.406069 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:00:29.406613 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:00:29.408257 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:00:29.408994 [error] [Thread-2 (]: 2 of 9 ERROR greater_than_column_sales_order_header_duedate__orderdate ......... [[31mERROR[0m in 0.13s]
+[0m10:00:29.411063 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:00:29.411580 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:00:29.412102 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:00:29.412622 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:00:29.413660 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: BEGIN
+[0m10:00:29.414185 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:00:29.414706 [info ] [Thread-1 (]: 7 of 9 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m10:00:29.415226 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:00:29.415737 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:00:29.416254 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: BEGIN
+[0m10:00:29.416254 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405, now test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321)
+[0m10:00:29.417248 [info ] [Thread-2 (]: 8 of 9 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m10:00:29.418247 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:00:29.418247 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:00:29.419247 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f, now test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493)
+[0m10:00:29.428246 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:00:29.429246 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:00:29.433340 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:00:29.434068 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (compile): 10:00:29.420250 => 10:00:29.433912
+[0m10:00:29.434068 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:00:29.435069 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (compile): 10:00:29.429246 => 10:00:29.435069
+[0m10:00:29.436073 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.436073 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.440069 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:00:29.441068 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:00:29.441068 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:00:29.442069 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:00:29.446069 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:00:29.447069 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select row_id
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.447069 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:00:29.448071 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.test_due_date_before_order_date"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT duedate, orderdate, count(1) as occurences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate
+      
+    ) dbt_internal_test
+[0m10:00:29.449086 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:00:29.449086 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m10:00:29.450069 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m10:00:29.451069 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:00:29.451069 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:00:29.453068 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.454183 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.456777 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (execute): 10:00:29.403912 => 10:00:29.456777
+[0m10:00:29.456777 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (execute): 10:00:29.409514 => 10:00:29.456777
+[0m10:00:29.456777 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: ROLLBACK
+[0m10:00:29.456777 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: ROLLBACK
+[0m10:00:29.456777 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: Close
+[0m10:00:29.456777 [debug] [Thread-3 (]: On test.dbt_tutorial.test_due_date_before_order_date: Close
+[0m10:00:29.456777 [info ] [Thread-4 (]: 5 of 9 PASS not_null_sales_order_header_row_id ................................. [[32mPASS[0m in 0.07s]
+[0m10:00:29.466081 [info ] [Thread-3 (]: 6 of 9 PASS test_due_date_before_order_date .................................... [[32mPASS[0m in 0.08s]
+[0m10:00:29.469721 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:00:29.470249 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:00:29.471339 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:00:29.472394 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.472394 [info ] [Thread-4 (]: 9 of 9 START test unique_sales_order_header_row_id ............................. [RUN]
+[0m10:00:29.473437 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:00:29.473963 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438, now test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e)
+[0m10:00:29.474890 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.475981 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:00:29.477054 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.481299 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:00:29.481815 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.482331 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:00:29.485119 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (execute): 10:00:29.437072 => 10:00:29.484616
+[0m10:00:29.485781 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (compile): 10:00:29.477579 => 10:00:29.485781
+[0m10:00:29.486310 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.486833 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m10:00:29.487861 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:00:29.490981 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:00:29.492982 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: Close
+[0m10:00:29.492982 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.493980 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:00:29.494982 [info ] [Thread-1 (]: 7 of 9 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.08s]
+[0m10:00:29.498382 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (execute): 10:00:29.443069 => 10:00:29.497827
+[0m10:00:29.499951 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: BEGIN
+[0m10:00:29.501222 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:00:29.501740 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m10:00:29.502257 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:00:29.504331 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m10:00:29.507742 [info ] [Thread-2 (]: 8 of 9 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.09s]
+[0m10:00:29.509839 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:00:29.522908 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.523428 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:00:29.523947 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    row_id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is not null
+group by row_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:00:29.538226 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:00:29.540223 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (execute): 10:00:29.488399 => 10:00:29.539224
+[0m10:00:29.540223 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: ROLLBACK
+[0m10:00:29.542225 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: Close
+[0m10:00:29.543226 [info ] [Thread-4 (]: 9 of 9 PASS unique_sales_order_header_row_id ................................... [[32mPASS[0m in 0.07s]
+[0m10:00:29.544224 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:00:29.546820 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:29.547348 [debug] [MainThread]: On master: BEGIN
+[0m10:00:29.547870 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:00:29.560382 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:00:29.561383 [debug] [MainThread]: On master: COMMIT
+[0m10:00:29.561383 [debug] [MainThread]: Using postgres connection "master"
+[0m10:00:29.562383 [debug] [MainThread]: On master: COMMIT
+[0m10:00:29.563383 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:00:29.563383 [debug] [MainThread]: On master: Close
+[0m10:00:29.564383 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:00:29.565383 [debug] [MainThread]: Connection 'list_Adventureworks_warehouse' was properly closed.
+[0m10:00:29.565383 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m10:00:29.566385 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m10:00:29.566385 [debug] [MainThread]: Connection 'test.dbt_tutorial.test_due_date_before_order_date' was properly closed.
+[0m10:00:29.567418 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e' was properly closed.
+[0m10:00:29.567956 [info ] [MainThread]: 
+[0m10:00:29.569000 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 0.69 seconds (0.69s).
+[0m10:00:29.571067 [debug] [MainThread]: Command end result
+[0m10:00:29.577270 [info ] [MainThread]: 
+[0m10:00:29.578407 [info ] [MainThread]: [31mCompleted with 3 errors and 0 warnings:[0m
+[0m10:00:29.578921 [info ] [MainThread]: 
+[0m10:00:29.579918 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m10:00:29.579918 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:00:29.580918 [info ] [MainThread]: 
+[0m10:00:29.580918 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m10:00:29.582009 [info ] [MainThread]: 
+[0m10:00:29.582232 [error] [MainThread]: [31mFailure in test accepted_values_sales_order_header_status__1__2__3__4 (models\warehouse\sales_order_header.yml)[0m
+[0m10:00:29.582232 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:00:29.583282 [info ] [MainThread]: 
+[0m10:00:29.583282 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\warehouse\sales_order_header.yml\accepted_values_sales_order_header_status__1__2__3__4.sql
+[0m10:00:29.584283 [info ] [MainThread]: 
+[0m10:00:29.584283 [error] [MainThread]: [33mDatabase Error in test greater_than_column_sales_order_header_duedate__orderdate (models\warehouse\sales_order_header.yml)[0m
+[0m10:00:29.585282 [error] [MainThread]:   syntax error at or near "GROUP"
+[0m10:00:29.585282 [error] [MainThread]:   LINE 12: GROUP BY duedate, orderdate
+[0m10:00:29.586282 [error] [MainThread]:            ^
+[0m10:00:29.587297 [error] [MainThread]:   compiled Code at target\run\dbt_tutorial\models\warehouse\sales_order_header.yml\greater_than_column_sales_order_header_duedate__orderdate.sql
+[0m10:00:29.587297 [info ] [MainThread]: 
+[0m10:00:29.588282 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=3 SKIP=0 TOTAL=9
+[0m10:00:29.589290 [debug] [MainThread]: Command `dbt test` failed at 10:00:29.589290 after 1.01 seconds
+[0m10:00:29.589290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11D677640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A11FC04130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A1202136D0>]}
+[0m10:00:29.590284 [debug] [MainThread]: Flushing usage events
+[0m10:17:15.461033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A068E87640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B3C7280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B3C7130>]}
+
+
+============================== 10:17:15.461033 | 301c63e0-9931-499a-8c28-ae1b228cf0cc ==============================
+[0m10:17:15.461033 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:17:15.461033 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'D:\\CS\\dbt\\dbt_tutorial\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\mtri0\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:17:15.548738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B3C73D0>]}
+[0m10:17:15.565976 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B51CAC0>]}
+[0m10:17:15.567974 [info ] [MainThread]: Registered adapter: postgres=1.5.11
+[0m10:17:15.579939 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m10:17:15.681254 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:17:15.682500 [debug] [MainThread]: Partial parsing: updated file: dbt_tutorial://tests\generic\test_greater_than_column.sql
+[0m10:17:15.708431 [debug] [MainThread]: 1699: static parser successfully parsed warehouse\sales_order_header.sql
+[0m10:17:15.783211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B9180D0>]}
+[0m10:17:15.790213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B853FA0>]}
+[0m10:17:15.791213 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:17:15.791213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B895960>]}
+[0m10:17:15.793213 [info ] [MainThread]: 
+[0m10:17:15.794213 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:17:15.796213 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Adventureworks_warehouse'
+[0m10:17:15.806306 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:17:15.806306 [debug] [ThreadPool]: On list_Adventureworks_warehouse: BEGIN
+[0m10:17:15.807310 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:17:15.851342 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:15.851342 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:17:15.852341 [debug] [ThreadPool]: On list_Adventureworks_warehouse: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "list_Adventureworks_warehouse"} */
+select
+      'Adventureworks' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'Adventureworks' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m10:17:15.859491 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m10:17:15.860492 [debug] [ThreadPool]: On list_Adventureworks_warehouse: ROLLBACK
+[0m10:17:15.861491 [debug] [ThreadPool]: On list_Adventureworks_warehouse: Close
+[0m10:17:15.867559 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:15.868073 [debug] [MainThread]: On master: BEGIN
+[0m10:17:15.868073 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:17:15.887540 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:15.887540 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:15.888538 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m10:17:16.144499 [debug] [MainThread]: SQL status: SELECT 147 in 0.0 seconds
+[0m10:17:16.148496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '301c63e0-9931-499a-8c28-ae1b228cf0cc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B853FD0>]}
+[0m10:17:16.149496 [debug] [MainThread]: On master: ROLLBACK
+[0m10:17:16.150497 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:16.150497 [debug] [MainThread]: On master: BEGIN
+[0m10:17:16.152498 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.152498 [debug] [MainThread]: On master: COMMIT
+[0m10:17:16.153497 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:16.153497 [debug] [MainThread]: On master: COMMIT
+[0m10:17:16.154497 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:17:16.154497 [debug] [MainThread]: On master: Close
+[0m10:17:16.155496 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:17:16.156500 [info ] [MainThread]: 
+[0m10:17:16.165270 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:17:16.165794 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:17:16.166314 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:17:16.166835 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:17:16.167354 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_sales_order_header_status__1__2__3__4 ........ [RUN]
+[0m10:17:16.167874 [info ] [Thread-2 (]: 2 of 9 START test greater_than_column_sales_order_header_duedate__orderdate .... [RUN]
+[0m10:17:16.168398 [info ] [Thread-3 (]: 3 of 9 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m10:17:16.169431 [info ] [Thread-4 (]: 4 of 9 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m10:17:16.170428 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405'
+[0m10:17:16.170428 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f'
+[0m10:17:16.171429 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m10:17:16.172431 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778'
+[0m10:17:16.172431 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:17:16.173429 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:17:16.173429 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:17:16.174430 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:17:16.183819 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:17:16.188821 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:17:16.198820 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:17:16.203821 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:17:16.206254 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (compile): 10:17:16.174430 => 10:17:16.204821
+[0m10:17:16.207255 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (compile): 10:17:16.184823 => 10:17:16.206254
+[0m10:17:16.208247 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 10:17:16.189822 => 10:17:16.207255
+[0m10:17:16.208247 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (compile): 10:17:16.199825 => 10:17:16.208247
+[0m10:17:16.208247 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:17:16.209257 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:17:16.209257 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:17:16.209257 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:17:16.222661 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:17:16.225658 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:17:16.228662 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:17:16.231371 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:17:16.232361 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:17:16.233406 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:17:16.233406 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:17:16.233406 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: BEGIN
+[0m10:17:16.233406 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:17:16.233406 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: BEGIN
+[0m10:17:16.233406 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m10:17:16.233406 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:17:16.233406 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m10:17:16.233406 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:17:16.233406 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:17:16.238785 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:17:16.252950 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.253979 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:17:16.254621 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "Adventureworks"."warehouse"."sales_order_header"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.261668 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.262668 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:17:16.263669 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.264668 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.264668 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:17:16.265667 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.265667 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.268668 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 10:17:16.226699 => 10:17:16.268668
+[0m10:17:16.268668 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.269670 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m10:17:16.271670 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (execute): 10:17:16.228662 => 10:17:16.271670
+[0m10:17:16.272673 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m10:17:16.273668 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m10:17:16.273668 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.276670 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m10:17:16.275670 [error] [Thread-3 (]: 3 of 9 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.10s]
+[0m10:17:16.277670 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:17:16.279494 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:17:16.280616 [info ] [Thread-4 (]: 4 of 9 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.11s]
+[0m10:17:16.281884 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+SELECT duedate, orderdate, count(1) as num_occurrences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.282998 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:17:16.284250 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:17:16.284774 [info ] [Thread-3 (]: 5 of 9 START test not_null_sales_order_header_row_id ........................... [RUN]
+[0m10:17:16.287035 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:17:16.288673 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438)
+[0m10:17:16.289205 [info ] [Thread-4 (]: 6 of 9 START test test_due_date_before_order_date .............................. [RUN]
+[0m10:17:16.290261 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:17:16.291304 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_tutorial.test_due_date_before_order_date)
+[0m10:17:16.297962 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:17:16.298962 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:17:16.306068 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:17:16.307173 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.307699 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.308262 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (compile): 10:17:16.291833 => 10:17:16.308262
+[0m10:17:16.312064 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (execute): 10:17:16.222661 => 10:17:16.311548
+[0m10:17:16.317462 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (execute): 10:17:16.209257 => 10:17:16.316683
+[0m10:17:16.319623 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (compile): 10:17:16.299959 => 10:17:16.319076
+[0m10:17:16.321431 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:17:16.322582 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: ROLLBACK
+[0m10:17:16.323167 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: ROLLBACK
+[0m10:17:16.324226 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:17:16.327725 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:17:16.334190 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:17:16.334736 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: Close
+[0m10:17:16.335282 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: Close
+[0m10:17:16.336351 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:17:16.337402 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:17:16.338475 [error] [Thread-1 (]: 1 of 9 FAIL 1 accepted_values_sales_order_header_status__1__2__3__4 ............ [[31mFAIL 1[0m in 0.17s]
+[0m10:17:16.340085 [info ] [Thread-2 (]: 2 of 9 PASS greater_than_column_sales_order_header_duedate__orderdate .......... [[32mPASS[0m in 0.17s]
+[0m10:17:16.341133 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: BEGIN
+[0m10:17:16.342181 [debug] [Thread-4 (]: On test.dbt_tutorial.test_due_date_before_order_date: BEGIN
+[0m10:17:16.343235 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:17:16.343758 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:17:16.344280 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:17:16.344804 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:17:16.345328 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:17:16.345852 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:17:16.347703 [info ] [Thread-1 (]: 7 of 9 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m10:17:16.349387 [info ] [Thread-2 (]: 8 of 9 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m10:17:16.350439 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405, now test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321)
+[0m10:17:16.351431 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f, now test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493)
+[0m10:17:16.351431 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:17:16.353094 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:17:16.363750 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:17:16.371165 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:17:16.372235 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.373825 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (compile): 10:17:16.354169 => 10:17:16.373300
+[0m10:17:16.374351 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.374868 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:17:16.375901 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (compile): 10:17:16.365371 => 10:17:16.375396
+[0m10:17:16.375920 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:17:16.377030 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:17:16.377558 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select row_id
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.378630 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:17:16.382356 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:17:16.382941 [debug] [Thread-4 (]: On test.dbt_tutorial.test_due_date_before_order_date: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.test_due_date_before_order_date"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT duedate, orderdate, count(1) as occurences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate
+      
+    ) dbt_internal_test
+[0m10:17:16.385557 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:17:16.387169 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:17:16.387687 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m10:17:16.388688 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:17:16.389696 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:17:16.389696 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.390696 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m10:17:16.392690 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (execute): 10:17:16.324755 => 10:17:16.392690
+[0m10:17:16.393690 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:17:16.393690 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.394687 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: ROLLBACK
+[0m10:17:16.396686 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (execute): 10:17:16.328799 => 10:17:16.396686
+[0m10:17:16.397685 [debug] [Thread-4 (]: On test.dbt_tutorial.test_due_date_before_order_date: ROLLBACK
+[0m10:17:16.397685 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: Close
+[0m10:17:16.399685 [debug] [Thread-4 (]: On test.dbt_tutorial.test_due_date_before_order_date: Close
+[0m10:17:16.399685 [info ] [Thread-3 (]: 5 of 9 PASS not_null_sales_order_header_row_id ................................. [[32mPASS[0m in 0.11s]
+[0m10:17:16.401685 [info ] [Thread-4 (]: 6 of 9 PASS test_due_date_before_order_date .................................... [[32mPASS[0m in 0.11s]
+[0m10:17:16.402685 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:17:16.402685 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:17:16.403686 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:17:16.404686 [info ] [Thread-3 (]: 9 of 9 START test unique_sales_order_header_row_id ............................. [RUN]
+[0m10:17:16.405687 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438, now test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e)
+[0m10:17:16.405687 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:17:16.411058 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:17:16.411586 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.412663 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:17:16.413729 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.414258 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (compile): 10:17:16.405687 => 10:17:16.413729
+[0m10:17:16.414784 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.415297 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:17:16.415297 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:17:16.415297 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:17:16.415297 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.415297 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.421320 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (execute): 10:17:16.379146 => 10:17:16.415297
+[0m10:17:16.421320 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:17:16.421320 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m10:17:16.421320 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: BEGIN
+[0m10:17:16.421320 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:17:16.421320 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.421320 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: Close
+[0m10:17:16.425895 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (execute): 10:17:16.383464 => 10:17:16.421320
+[0m10:17:16.428780 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m10:17:16.429777 [info ] [Thread-1 (]: 7 of 9 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.08s]
+[0m10:17:16.430776 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:17:16.430776 [debug] [Thread-2 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m10:17:16.433068 [info ] [Thread-2 (]: 8 of 9 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.08s]
+[0m10:17:16.434128 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:17:16.451451 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.452451 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:17:16.452451 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    row_id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is not null
+group by row_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:17:16.473875 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:17:16.475867 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (execute): 10:17:16.415297 => 10:17:16.474839
+[0m10:17:16.475867 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: ROLLBACK
+[0m10:17:16.476867 [debug] [Thread-3 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: Close
+[0m10:17:16.478853 [info ] [Thread-3 (]: 9 of 9 PASS unique_sales_order_header_row_id ................................... [[32mPASS[0m in 0.07s]
+[0m10:17:16.479842 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:17:16.481781 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:16.482301 [debug] [MainThread]: On master: BEGIN
+[0m10:17:16.482301 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:17:16.492736 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:17:16.492736 [debug] [MainThread]: On master: COMMIT
+[0m10:17:16.492736 [debug] [MainThread]: Using postgres connection "master"
+[0m10:17:16.492736 [debug] [MainThread]: On master: COMMIT
+[0m10:17:16.492736 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:17:16.492736 [debug] [MainThread]: On master: Close
+[0m10:17:16.492736 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:17:16.501616 [debug] [MainThread]: Connection 'list_Adventureworks_warehouse' was properly closed.
+[0m10:17:16.501616 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m10:17:16.501616 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m10:17:16.502622 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e' was properly closed.
+[0m10:17:16.503290 [debug] [MainThread]: Connection 'test.dbt_tutorial.test_due_date_before_order_date' was properly closed.
+[0m10:17:16.503814 [info ] [MainThread]: 
+[0m10:17:16.504336 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 0.71 seconds (0.71s).
+[0m10:17:16.506504 [debug] [MainThread]: Command end result
+[0m10:17:16.514862 [info ] [MainThread]: 
+[0m10:17:16.514862 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m10:17:16.514862 [info ] [MainThread]: 
+[0m10:17:16.514862 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m10:17:16.514862 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:17:16.514862 [info ] [MainThread]: 
+[0m10:17:16.514862 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m10:17:16.514862 [info ] [MainThread]: 
+[0m10:17:16.514862 [error] [MainThread]: [31mFailure in test accepted_values_sales_order_header_status__1__2__3__4 (models\warehouse\sales_order_header.yml)[0m
+[0m10:17:16.521430 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:17:16.521840 [info ] [MainThread]: 
+[0m10:17:16.521840 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\warehouse\sales_order_header.yml\accepted_values_sales_order_header_status__1__2__3__4.sql
+[0m10:17:16.522845 [info ] [MainThread]: 
+[0m10:17:16.523844 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=2 SKIP=0 TOTAL=9
+[0m10:17:16.524845 [debug] [MainThread]: Command `dbt test` failed at 10:17:16.524845 after 1.08 seconds
+[0m10:17:16.524845 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A068E87640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06BC0F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A06B3C73D0>]}
+[0m10:17:16.525845 [debug] [MainThread]: Flushing usage events
+[0m10:21:29.858500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070A477640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070C8C31F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070C8C30A0>]}
+
+
+============================== 10:21:29.866630 | b9724f22-157e-4ed1-991d-33377e51f6b5 ==============================
+[0m10:21:29.866630 [info ] [MainThread]: Running with dbt=1.5.11
+[0m10:21:29.866630 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\mtri0\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'D:\\CS\\dbt\\dbt_tutorial\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m10:21:29.936461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070C8C3340>]}
+[0m10:21:29.962596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070CC1CA30>]}
+[0m10:21:29.963594 [info ] [MainThread]: Registered adapter: postgres=1.5.11
+[0m10:21:29.974595 [debug] [MainThread]: checksum: 007b492a958e08141e13011e4198bea48e7f359a98b57e51b7a963fca8fc83af, vars: {}, profile: , target: , version: 1.5.11
+[0m10:21:30.069560 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m10:21:30.069560 [debug] [MainThread]: Partial parsing: updated file: dbt_tutorial://tests\generic\test_greater_than_column.sql
+[0m10:21:30.094767 [debug] [MainThread]: 1699: static parser successfully parsed warehouse\sales_order_header.sql
+[0m10:21:30.169904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070CE180D0>]}
+[0m10:21:30.176904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070CD4FF40>]}
+[0m10:21:30.177872 [info ] [MainThread]: Found 3 models, 9 tests, 0 snapshots, 0 analyses, 311 macros, 0 operations, 0 seed files, 3 sources, 0 exposures, 0 metrics, 0 groups
+[0m10:21:30.178871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070CD958D0>]}
+[0m10:21:30.179871 [info ] [MainThread]: 
+[0m10:21:30.181019 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m10:21:30.183153 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Adventureworks_warehouse'
+[0m10:21:30.194189 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:21:30.195183 [debug] [ThreadPool]: On list_Adventureworks_warehouse: BEGIN
+[0m10:21:30.195183 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m10:21:30.230100 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.231188 [debug] [ThreadPool]: Using postgres connection "list_Adventureworks_warehouse"
+[0m10:21:30.231188 [debug] [ThreadPool]: On list_Adventureworks_warehouse: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "list_Adventureworks_warehouse"} */
+select
+      'Adventureworks' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'warehouse'
+    union all
+    select
+      'Adventureworks' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'warehouse'
+  
+[0m10:21:30.234296 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m10:21:30.235297 [debug] [ThreadPool]: On list_Adventureworks_warehouse: ROLLBACK
+[0m10:21:30.236305 [debug] [ThreadPool]: On list_Adventureworks_warehouse: Close
+[0m10:21:30.242849 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.243378 [debug] [MainThread]: On master: BEGIN
+[0m10:21:30.243378 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:21:30.281419 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.281480 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.282481 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m10:21:30.453688 [debug] [MainThread]: SQL status: SELECT 147 in 0.0 seconds
+[0m10:21:30.457687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b9724f22-157e-4ed1-991d-33377e51f6b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070CD4FFD0>]}
+[0m10:21:30.458797 [debug] [MainThread]: On master: ROLLBACK
+[0m10:21:30.459798 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.459798 [debug] [MainThread]: On master: BEGIN
+[0m10:21:30.460799 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.461799 [debug] [MainThread]: On master: COMMIT
+[0m10:21:30.461799 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.461799 [debug] [MainThread]: On master: COMMIT
+[0m10:21:30.462799 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:21:30.463799 [debug] [MainThread]: On master: Close
+[0m10:21:30.464802 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m10:21:30.464802 [info ] [MainThread]: 
+[0m10:21:30.472475 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:21:30.472998 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:21:30.472998 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:21:30.473518 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:21:30.474041 [info ] [Thread-1 (]: 1 of 9 START test accepted_values_sales_order_header_status__1__2__3__4 ........ [RUN]
+[0m10:21:30.475089 [info ] [Thread-2 (]: 2 of 9 START test greater_than_column_sales_order_header_duedate__orderdate .... [RUN]
+[0m10:21:30.475611 [info ] [Thread-3 (]: 3 of 9 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m10:21:30.476124 [info ] [Thread-4 (]: 4 of 9 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m10:21:30.477163 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405'
+[0m10:21:30.477683 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f'
+[0m10:21:30.478714 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m10:21:30.478714 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778'
+[0m10:21:30.479713 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:21:30.479713 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:21:30.480713 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:21:30.480713 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:21:30.489898 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:21:30.494897 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:21:30.506004 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:21:30.508540 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:21:30.508540 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (compile): 10:21:30.481740 => 10:21:30.508540
+[0m10:21:30.508540 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (compile): 10:21:30.490896 => 10:21:30.508540
+[0m10:21:30.508540 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 10:21:30.494897 => 10:21:30.508540
+[0m10:21:30.508540 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:21:30.508540 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (compile): 10:21:30.506530 => 10:21:30.508540
+[0m10:21:30.508540 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:21:30.508540 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:21:30.528835 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:21:30.529835 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:21:30.533038 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:21:30.535039 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:21:30.537963 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:21:30.537963 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:21:30.538961 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:21:30.539962 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:21:30.539962 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: BEGIN
+[0m10:21:30.540962 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:21:30.540962 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: BEGIN
+[0m10:21:30.541963 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m10:21:30.541963 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m10:21:30.542962 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m10:21:30.542962 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m10:21:30.543960 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m10:21:30.543960 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m10:21:30.558112 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.559116 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"
+[0m10:21:30.559116 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from "Adventureworks"."warehouse"."sales_order_header"
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    '1','2','3','4'
+)
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.561114 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.561114 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.562114 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"
+[0m10:21:30.562114 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m10:21:30.563116 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.563116 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+
+SELECT duedate, orderdate, count(1) as num_occurrences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY 1, 2
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.564113 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.564113 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"
+[0m10:21:30.565113 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select id
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.565113 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.568115 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 10:21:30.533038 => 10:21:30.568115
+[0m10:21:30.569114 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.569114 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.570114 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.570114 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m10:21:30.572112 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778 (execute): 10:21:30.536038 => 10:21:30.571114
+[0m10:21:30.573112 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f (execute): 10:21:30.529835 => 10:21:30.573112
+[0m10:21:30.574113 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405 (execute): 10:21:30.508540 => 10:21:30.574113
+[0m10:21:30.575113 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m10:21:30.575113 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: ROLLBACK
+[0m10:21:30.576114 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m10:21:30.576114 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: ROLLBACK
+[0m10:21:30.578113 [debug] [Thread-2 (]: On test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f: Close
+[0m10:21:30.578113 [debug] [Thread-4 (]: On test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m10:21:30.578113 [error] [Thread-3 (]: 3 of 9 FAIL 1 not_null_my_first_dbt_model_id ................................... [[31mFAIL 1[0m in 0.10s]
+[0m10:21:30.580654 [debug] [Thread-1 (]: On test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405: Close
+[0m10:21:30.580115 [info ] [Thread-2 (]: 2 of 9 PASS greater_than_column_sales_order_header_duedate__orderdate .......... [[32mPASS[0m in 0.10s]
+[0m10:21:30.582011 [info ] [Thread-4 (]: 4 of 9 PASS not_null_my_second_dbt_model_id .................................... [[32mPASS[0m in 0.10s]
+[0m10:21:30.583709 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710
+[0m10:21:30.585801 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f
+[0m10:21:30.584760 [error] [Thread-1 (]: 1 of 9 FAIL 1 accepted_values_sales_order_header_status__1__2__3__4 ............ [[31mFAIL 1[0m in 0.11s]
+[0m10:21:30.586836 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778
+[0m10:21:30.587907 [debug] [Thread-3 (]: Began running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:21:30.588432 [debug] [Thread-2 (]: Began running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:21:30.589473 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405
+[0m10:21:30.589994 [debug] [Thread-4 (]: Began running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:21:30.590514 [info ] [Thread-3 (]: 5 of 9 START test not_null_sales_order_header_row_id ........................... [RUN]
+[0m10:21:30.591033 [info ] [Thread-2 (]: 6 of 9 START test test_due_date_before_order_date .............................. [RUN]
+[0m10:21:30.591551 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:21:30.592072 [info ] [Thread-4 (]: 7 of 9 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m10:21:30.592591 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438)
+[0m10:21:30.593631 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.greater_than_column_sales_order_header_duedate__orderdate.2d27c1e37f, now test.dbt_tutorial.test_due_date_before_order_date)
+[0m10:21:30.594163 [info ] [Thread-1 (]: 8 of 9 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m10:21:30.595200 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321)
+[0m10:21:30.595718 [debug] [Thread-3 (]: Began compiling node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:21:30.596227 [debug] [Thread-2 (]: Began compiling node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:21:30.596745 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.accepted_values_sales_order_header_status__1__2__3__4.d21bbba405, now test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493)
+[0m10:21:30.597313 [debug] [Thread-4 (]: Began compiling node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:21:30.600864 [debug] [Thread-3 (]: Writing injected SQL for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:21:30.603863 [debug] [Thread-2 (]: Writing injected SQL for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:21:30.603863 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:21:30.611613 [debug] [Thread-4 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:21:30.611613 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (compile): 10:21:30.597313 => 10:21:30.611613
+[0m10:21:30.617182 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (compile): 10:21:30.601863 => 10:21:30.616960
+[0m10:21:30.618200 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:21:30.619197 [debug] [Thread-3 (]: Began executing node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:21:30.620195 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (compile): 10:21:30.604864 => 10:21:30.619197
+[0m10:21:30.620195 [debug] [Thread-2 (]: Began executing node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:21:30.623196 [debug] [Thread-3 (]: Writing runtime sql for node "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:21:30.624182 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (compile): 10:21:30.611613 => 10:21:30.624182
+[0m10:21:30.625184 [debug] [Thread-4 (]: Began executing node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:21:30.628182 [debug] [Thread-2 (]: Writing runtime sql for node "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:21:30.629184 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:21:30.630183 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:21:30.633526 [debug] [Thread-4 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:21:30.636137 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:21:30.636137 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:21:30.637103 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: BEGIN
+[0m10:21:30.638113 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:21:30.639102 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:21:30.639102 [debug] [Thread-2 (]: On test.dbt_tutorial.test_due_date_before_order_date: BEGIN
+[0m10:21:30.639102 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m10:21:30.640104 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m10:21:30.640104 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m10:21:30.641104 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m10:21:30.641881 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m10:21:30.642886 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:21:30.657477 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.658665 [debug] [Thread-2 (]: Using postgres connection "test.dbt_tutorial.test_due_date_before_order_date"
+[0m10:21:30.658665 [debug] [Thread-2 (]: On test.dbt_tutorial.test_due_date_before_order_date: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.test_due_date_before_order_date"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      SELECT duedate, orderdate, count(1) as occurences
+FROM "Adventureworks"."warehouse"."sales_order_header"
+WHERE duedate < orderdate
+GROUP BY duedate, orderdate
+      
+    ) dbt_internal_test
+[0m10:21:30.658665 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.659666 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.659666 [debug] [Thread-4 (]: Using postgres connection "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"
+[0m10:21:30.660666 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"
+[0m10:21:30.660666 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.661666 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.662666 [debug] [Thread-4 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.663666 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.663666 [debug] [Thread-2 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.665666 [debug] [Thread-4 (]: Timing info for test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321 (execute): 10:21:30.630183 => 10:21:30.664666
+[0m10:21:30.666664 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493 (execute): 10:21:30.634098 => 10:21:30.666664
+[0m10:21:30.667664 [debug] [Thread-2 (]: Timing info for test.dbt_tutorial.test_due_date_before_order_date (execute): 10:21:30.625184 => 10:21:30.667664
+[0m10:21:30.668664 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m10:21:30.668664 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m10:21:30.669664 [debug] [Thread-2 (]: On test.dbt_tutorial.test_due_date_before_order_date: ROLLBACK
+[0m10:21:30.670664 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m10:21:30.670664 [debug] [Thread-4 (]: On test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321: Close
+[0m10:21:30.671664 [debug] [Thread-2 (]: On test.dbt_tutorial.test_due_date_before_order_date: Close
+[0m10:21:30.672669 [info ] [Thread-1 (]: 8 of 9 PASS unique_my_second_dbt_model_id ...................................... [[32mPASS[0m in 0.08s]
+[0m10:21:30.673669 [info ] [Thread-4 (]: 7 of 9 PASS unique_my_first_dbt_model_id ....................................... [[32mPASS[0m in 0.08s]
+[0m10:21:30.675856 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.675339 [info ] [Thread-2 (]: 6 of 9 PASS test_due_date_before_order_date .................................... [[32mPASS[0m in 0.08s]
+[0m10:21:30.676911 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493
+[0m10:21:30.677953 [debug] [Thread-4 (]: Finished running node test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321
+[0m10:21:30.678513 [debug] [Thread-3 (]: Using postgres connection "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"
+[0m10:21:30.679037 [debug] [Thread-2 (]: Finished running node test.dbt_tutorial.test_due_date_before_order_date
+[0m10:21:30.679557 [debug] [Thread-1 (]: Began running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:21:30.680601 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select row_id
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is null
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.681225 [info ] [Thread-1 (]: 9 of 9 START test unique_sales_order_header_row_id ............................. [RUN]
+[0m10:21:30.682803 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.dbt_tutorial.unique_my_second_dbt_model_id.57a0f8c493, now test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e)
+[0m10:21:30.683603 [debug] [Thread-1 (]: Began compiling node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:21:30.688805 [debug] [Thread-1 (]: Writing injected SQL for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:21:30.688805 [debug] [Thread-3 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.689805 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (compile): 10:21:30.684135 => 10:21:30.689805
+[0m10:21:30.691806 [debug] [Thread-3 (]: Timing info for test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438 (execute): 10:21:30.621182 => 10:21:30.691806
+[0m10:21:30.692805 [debug] [Thread-1 (]: Began executing node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:21:30.692805 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: ROLLBACK
+[0m10:21:30.695803 [debug] [Thread-1 (]: Writing runtime sql for node "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:21:30.696693 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:21:30.696693 [debug] [Thread-3 (]: On test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438: Close
+[0m10:21:30.697687 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: BEGIN
+[0m10:21:30.698699 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m10:21:30.699690 [info ] [Thread-3 (]: 5 of 9 PASS not_null_sales_order_header_row_id ................................. [[32mPASS[0m in 0.11s]
+[0m10:21:30.700688 [debug] [Thread-3 (]: Finished running node test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438
+[0m10:21:30.716012 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.717051 [debug] [Thread-1 (]: Using postgres connection "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"
+[0m10:21:30.717562 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: /* {"app": "dbt", "dbt_version": "1.5.11", "profile_name": "dbt_tutorial", "target_name": "dev", "node_id": "test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    row_id as unique_field,
+    count(*) as n_records
+
+from "Adventureworks"."warehouse"."sales_order_header"
+where row_id is not null
+group by row_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+[0m10:21:30.749356 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:21:30.750357 [debug] [Thread-1 (]: Timing info for test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e (execute): 10:21:30.693804 => 10:21:30.750357
+[0m10:21:30.751357 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: ROLLBACK
+[0m10:21:30.753357 [debug] [Thread-1 (]: On test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e: Close
+[0m10:21:30.754356 [info ] [Thread-1 (]: 9 of 9 PASS unique_sales_order_header_row_id ................................... [[32mPASS[0m in 0.07s]
+[0m10:21:30.756373 [debug] [Thread-1 (]: Finished running node test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e
+[0m10:21:30.760171 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.760690 [debug] [MainThread]: On master: BEGIN
+[0m10:21:30.761206 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m10:21:30.778165 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m10:21:30.778165 [debug] [MainThread]: On master: COMMIT
+[0m10:21:30.779156 [debug] [MainThread]: Using postgres connection "master"
+[0m10:21:30.779156 [debug] [MainThread]: On master: COMMIT
+[0m10:21:30.780155 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m10:21:30.780155 [debug] [MainThread]: On master: Close
+[0m10:21:30.781244 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m10:21:30.782251 [debug] [MainThread]: Connection 'list_Adventureworks_warehouse' was properly closed.
+[0m10:21:30.783470 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_sales_order_header_row_id.71dca2b08e' was properly closed.
+[0m10:21:30.783739 [debug] [MainThread]: Connection 'test.dbt_tutorial.test_due_date_before_order_date' was properly closed.
+[0m10:21:30.783739 [debug] [MainThread]: Connection 'test.dbt_tutorial.not_null_sales_order_header_row_id.4bffe69438' was properly closed.
+[0m10:21:30.784740 [debug] [MainThread]: Connection 'test.dbt_tutorial.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m10:21:30.785021 [info ] [MainThread]: 
+[0m10:21:30.785542 [info ] [MainThread]: Finished running 9 tests in 0 hours 0 minutes and 0.60 seconds (0.60s).
+[0m10:21:30.787608 [debug] [MainThread]: Command end result
+[0m10:21:30.797357 [info ] [MainThread]: 
+[0m10:21:30.798354 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m10:21:30.798354 [info ] [MainThread]: 
+[0m10:21:30.799355 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m10:21:30.800354 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:21:30.800354 [info ] [MainThread]: 
+[0m10:21:30.801354 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m10:21:30.801354 [info ] [MainThread]: 
+[0m10:21:30.802354 [error] [MainThread]: [31mFailure in test accepted_values_sales_order_header_status__1__2__3__4 (models\warehouse\sales_order_header.yml)[0m
+[0m10:21:30.803354 [error] [MainThread]:   Got 1 result, configured to fail if != 0
+[0m10:21:30.803354 [info ] [MainThread]: 
+[0m10:21:30.804355 [info ] [MainThread]:   compiled Code at target\compiled\dbt_tutorial\models\warehouse\sales_order_header.yml\accepted_values_sales_order_header_status__1__2__3__4.sql
+[0m10:21:30.804355 [info ] [MainThread]: 
+[0m10:21:30.805355 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=2 SKIP=0 TOTAL=9
+[0m10:21:30.806981 [debug] [MainThread]: Command `dbt test` failed at 10:21:30.806981 after 0.96 seconds
+[0m10:21:30.808051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070A477640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070C9E01C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002070C8C3340>]}
+[0m10:21:30.808051 [debug] [MainThread]: Flushing usage events
