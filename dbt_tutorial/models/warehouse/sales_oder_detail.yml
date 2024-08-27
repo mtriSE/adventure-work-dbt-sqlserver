@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: sales_order_detail
+    description: "Intermediate sales order detail table"
+    columns:
+      - name: salesorderid
+        description: "sales order id"
+      
+      - name: salesorderdetailid
+        description: "sales order detail id"
+
+      - name: orderqty
+        description: ""
+
+      - name: productid
+        description: "foreign key to product table"
+
+      - name: specialofferid
+        description: ""
+
+      - name: unitprice
+        description: "Unit price"
+
+      - name: unitpricediscount
+        description: "Unit price discount"
+
+      - name: row_id
+        description: "Row identifier"
+        tests:
+          - not null
+          - unique
+
+      - name: modifieddate
+        description: "Modified date"

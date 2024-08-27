@@ -150,6 +150,8 @@ Now, I will open files at path `target/compiled/dbt_tutorial/models/warehouse/sa
 
 There are more 31,000 row with value of `status` columns not in (1,2,3,4) -> the test throw fail!
 
+---
+
 # Advanced Testing - Adding custom tests
 To create a custom test, the simplest way is to write a test in SQL that checks a condition. In dbt, this can be enhanced by referring to the model involved using __Jinja__ to refer to a source or model. This is called a singular test. It needs to be added to the `tests` folder in the `dbt_tutorial` folder.
 
@@ -209,3 +211,75 @@ And the result:
 
 Below is the compiled form for the test in path `target/compiled/dbt_tutorial/tests/test_due_date_before_order_date.sql`
 ![generated generic test](figures/test_due_date_before_order_date.sql.png)
+
+By default, failed tests fail the test run, but this behavior can be customized to generate a warning or fail __only if the number of failed rows exceeds a certain threshold__
+
+---
+
+# Building simple star schema: existing models, relationship tests, and ephemeral persistence
+
+After getting a basic understanding of how dbt transformations are put together, lets build a fact table (the fact table in star schema) using two source tables: `sales.salesorderheader` and `sales.salesorderdetail`
+
+## Creating sales_order_detail relation
+
+![create the relation sales_order_detail](figures/sales_order_detail.png)
+
+```SQL
+-- sales_order_detail.sql
+SELECT 
+    salesorderid
+    ,salesorderdetailid
+    ,carriertrackingnumber
+    ,orderqty
+    ,productid
+    ,specialofferid
+    ,unitprice
+    ,unitpricediscount
+    ,rowguid as row_id
+    ,modifieddate
+FROM {{ source('sales','salesorderdetail') }}
+```
+
+``` YAML
+# sales_order_detail.yml
+version: 2
+
+models:
+  - name: sales_order_detail
+    description: "Intermediate sales order detail table"
+    columns:
+      - name: salesorderid
+        description: "sales order id"
+      
+      - name: salesorderdetailid
+        description: "sales order detail id"
+
+      - name: orderqty
+        description: ""
+
+      - name: productid
+        description: "foreign key to product table"
+
+      - name: specialofferid
+        description: ""
+
+      - name: unitprice
+        description: "Unit price"
+
+      - name: unitpricediscount
+        description: "Unit price discount"
+
+      - name: row_id
+        description: "Row identifier"
+        tests:
+          - not null
+          - unique
+
+      - name: modifieddate
+        description: "Modified date"
+```
+
+After two above steps, let run dbt to create the tables
+```shell
+dbt run
+```
