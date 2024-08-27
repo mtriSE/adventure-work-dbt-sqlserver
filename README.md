@@ -283,3 +283,4 @@ After two above steps, let run dbt to create the tables
 ```shell
 dbt run
 ```
+![result after create the relation ](figures/create_sales_order_detail_relation.png)
