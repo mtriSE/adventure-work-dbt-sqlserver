@@ -20,35 +20,35 @@ models:
       - name: name
         data_type: varchar
         description: ""
-
+      
       - name: productnumber
         data_type: varchar
         description: ""
-
+      
       - name: makeflag
         data_type: boolean
         description: ""
-
+      
       - name: finishedgoodsflag
         data_type: boolean
         description: ""
-
+      
       - name: color
         data_type: varchar
         description: ""
-
+      
       - name: safetystocklevel
         data_type: int
         description: ""
-
+      
       - name: reorderpoint
         data_type: int
         description: ""
-
+      
       - name: standardcost
         data_type: numeric
         description: ""
-
+      
       - name: listprice
         data_type: numeric
         description: ""
