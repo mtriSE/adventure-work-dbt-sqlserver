@@ -284,3 +284,18 @@ After two above steps, let run dbt to create the tables
 dbt run
 ```
 ![result after create the relation ](figures/create_sales_order_detail_relation.png)
+
+## Creating product dimension - constraints
+To create dimension tables from production, the same process needs to be followed:
+- Define the model file: `dim_product.sql`
+- Define the associative YAML file `dim_product.yml`, add tests and comments are required
+
+In this section, __constraint__ will be added to the primary key constraint on the materialized `dim_product` table.
+- Constraints is a relatively new feature in dbt, from the version 1.5
+- It is a part of __Contracts__, also a new feature introduced in dbt 1.5. _Constracts are used to define configuration that is enforced by dbt_:
+
+When Contracts configuration is enforce, dbt will ensure that your model's returned dataset exactly matches the attributes you have defined in yaml:
+
+* name and data_type for every column
+* Additional constraints, as supported for this materializatin and data platform.
+
