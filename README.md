@@ -299,3 +299,162 @@ When Contracts configuration is enforce, dbt will ensure that your model's retur
 * name and data_type for every column
 * Additional constraints, as supported for this materializatin and data platform.
 
+![definition of constraints](figures/constraints-def.png)
+![definition of contract](figures/contract-def.png)
+
+Let define `dim_product` model
+
+`dim_product.sql`:
+
+```SQL
+SELECT 
+    productid, 
+    "name", 
+    productnumber, 
+    makeflag, 
+    finishedgoodsflag, 
+    color, 
+    safetystocklevel, 
+    reorderpoint, 
+    standardcost, 
+    listprice, 
+    "size", 
+    sizeunitmeasurecode, 
+    weightunitmeasurecode, 
+    "weight", 
+    daystomanufacture, 
+    productline, 
+    "class", 
+    "style", 
+    productsubcategoryid, 
+    productmodelid, 
+    sellstartdate, 
+    sellenddate, 
+    discontinueddate, 
+    rowguid as row_id, 
+    modifieddate
+FROM 
+    {{ source('production', 'product') }}
+```
+
+`dim_product.yml`:
+
+```YAML
+version: 2
+
+models:
+  - name: dim_product
+    config:
+      contract:
+        enforced: true
+    description: ""
+    columns:
+      - name: productid
+        data_type: int
+        description: ""
+        constraints:
+          - type: not_null
+          - type: primary_key
+        tests:
+          - not_null
+          - unique
+      
+      - name: name
+        data_type: varchar
+        description: ""
+      
+      - name: productnumber
+        data_type: varchar
+        description: ""
+      
+      - name: makeflag
+        data_type: boolean
+        description: ""
+      
+      - name: finishedgoodsflag
+        data_type: boolean
+        description: ""
+      
+      - name: color
+        data_type: varchar
+        description: ""
+      
+      - name: safetystocklevel
+        data_type: int
+        description: ""
+      
+      - name: reorderpoint
+        data_type: int
+        description: ""
+      
+      - name: standardcost
+        data_type: numeric
+        description: ""
+      
+      - name: listprice
+        data_type: numeric
+        description: ""
+      
+      - name: size
+        data_type: varchar
+        description: ""
+      
+      - name: sizeunitmeasurecode
+        data_type: varchar
+        description: ""
+
+      - name: weightunitmeasurecode
+        data_type: varchar
+        description: ""
+
+      - name: weight
+        data_type: numeric
+        description: ""        
+
+      - name: daystomanufacture
+        data_type: int
+        description: ""
+
+      - name: productline
+        data_type: varchar
+        description: ""  
+
+      - name: class
+        data_type: varchar
+        description: ""
+
+      - name: style
+        data_type: varchar
+        description: ""  
+
+      - name: productsubcategoryid
+        data_type: int
+        description: ""
+
+      - name: productmodelid
+        data_type: int
+        description: ""  
+
+      - name: sellstartdate
+        data_type: timestamp
+        description: ""
+
+      - name: sellenddate
+        data_type: timestamp
+        description: ""  
+
+      - name: discontinueddate
+        data_type: timestamp
+        description: ""                                     
+      
+      - name: modifieddate
+        data_type: timestamp
+        description: ""
+```
+
+And run with `--full-refresh`
+```shell
+dbt run
+```
+
+![run return error](figures/error-prod-dim.png)
